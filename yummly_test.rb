@@ -8,11 +8,11 @@ end
 
 results = Yummly.search('chocolate chip cookies') # this returns an array of recipe results
 
-first_recipe = results.first.name
+first_recipe_name = results.first.name
 first_recipe_ingredients = results.first.ingredients # this returns an array of recipe ingredients
 first_recipe_id = results.first.id
 
-puts "Recipe name: #{recipe_name}"
-puts "Recipe ingredients: #{recipe_ingredients}"
-puts "Here is a link to the recipe: http://www.yummly.com/recipe/#{recipe_id}"
+puts "Recipe name: #{first_recipe_name}"
+puts "Recipe ingredients: #{first_recipe_ingredients}"
+puts "Here is a link to the recipe: http://www.yummly.com/recipe/#{first_recipe_id}"
 
