@@ -32,10 +32,11 @@ yummly_key=e54e9cfa05d58b64bab7da2301f05c0b
 
 ### Searching for recipes
 
-The rest of the code below will go into one of the routes in your application controller. If you are taking in a search criteria via a form, then this code should go into that `post` route.
+The rest of the code below should go into a model (in the models directory) of your application. Then you'll need to create a new instance of that class inside of the appropriate route in your application controller and call your methods there.
 
 ``` ruby
 # this creates a new connection to the Yummly API
+# it should go in an initialize method in your new model/class
 Yummly.configure do |config|
   config.app_id = ENV['yummly_id']
   config.app_key = ENV['yummly_key']
@@ -43,6 +44,7 @@ Yummly.configure do |config|
 end
 
 # this searches Yummly for a recipe and returns an array of recipe objects
+# this should go into a method within your new model/class
 results = Yummly.search('type of recipe you want') #=> an array of recipe results
 ```
 
