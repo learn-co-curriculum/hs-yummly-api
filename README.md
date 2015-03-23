@@ -32,7 +32,7 @@ yummly_key=e54e9cfa05d58b64bab7da2301f05c0b
 
 ### Searching for recipes
 
-The rest of the code below should go into a model (in the models directory) of your application. Then you'll need to create a new instance of that class inside of the appropriate route in your application controller and call your methods there.
+The rest of the code below should go into a model (in the models directory) of your application. Then you'll need to create a new instance of that class inside of a route in your application controller and call your methods there.
 
 ``` ruby
 # this creates a new connection to the Yummly API
