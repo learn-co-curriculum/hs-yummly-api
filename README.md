@@ -22,14 +22,6 @@ Paste this into your `Gemfile`:
 gem 'yummly'
 ```
 
-Paste this into your `.env` file.
-
-``` ruby
-# these are the Flatiron School's Yummly credentials
-yummly_id=4e9f2aa0
-yummly_key=e54e9cfa05d58b64bab7da2301f05c0b
-```
-
 ### Searching for recipes
 
 The rest of the code below should go into a model (in the models directory) of your application. Then you'll need to create a new instance of that class inside of a route in your application controller and call your methods there.
@@ -38,8 +30,8 @@ The rest of the code below should go into a model (in the models directory) of y
 # this creates a new connection to the Yummly API
 # it should go in an initialize method in your new model/class
 Yummly.configure do |config|
-  config.app_id = ENV['yummly_id']
-  config.app_key = ENV['yummly_key']
+  config.app_id = "4e9f2aa0"
+  config.app_key = "e54e9cfa05d58b64bab7da2301f05c0b"
   config.use_ssl = true # Default is false
 end
 
