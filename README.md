@@ -1,9 +1,4 @@
----
-tags: kids, ruby, yummly, recipes, apis
-languages: ruby
-level: 1
-type: Intro, Documentation
----
+
 
 ### Yummly
 
