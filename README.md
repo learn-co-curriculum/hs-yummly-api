@@ -37,3 +37,5 @@ results = Yummly.search('type of recipe you want') #=> an array of recipe result
 
 Check out `yummly_test.rb` to see how you can pull out the name, ingredients and link to the first recipe in the array. To test the Flatiron Yummly account and see the results in that file, fork and clone this lab then run `ruby yummly_test.rb` in your terminal.
 
+
+<a href='https://learn.co/lessons/hs-yummly-api' data-visibility='hidden'>View this lesson on Learn.co</a>
